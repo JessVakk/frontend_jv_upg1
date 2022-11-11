@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
+
 const IssueForm = () => {
     const [status, setStatus] = useState([])
     const [customers, setCustomers] = useState([])
@@ -19,6 +20,13 @@ const IssueForm = () => {
         }
         fetchStatuses()
     }, [])
+    // useEffect(() => {
+    //     const fetchStatuses = async () => {
+    //         const res = await fetch('https://localhost:7090/api/Statuses')
+    //         setStatus(await res.json())
+    //     }
+    //     fetchStatuses()
+    // }, [])
 
 
     useEffect(() => {
