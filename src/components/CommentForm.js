@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { useParams } from 'react-router-dom'
 
 const CommentForm = () => {
-    const {issueId, customerId} = useParams() //Vill egentligen hämta dem från react-router-dom med routes
+    
+    const { id } = useParams()
+    const {issueId, customerId} = useParams('') 
     const [comment, setComment] = useState('')
 
     const handleSubmit = async (e) => {
@@ -20,7 +22,7 @@ const CommentForm = () => {
                 body: json
             })
             console.log(await res.json())
-            setComment('')
+            setComment()
         }
     }
 

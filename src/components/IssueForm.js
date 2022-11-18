@@ -20,14 +20,7 @@ const IssueForm = () => {
         }
         fetchStatuses()
     }, [])
-    // useEffect(() => {
-    //     const fetchStatuses = async () => {
-    //         const res = await fetch('https://localhost:7090/api/Statuses')
-    //         setStatus(await res.json())
-    //     }
-    //     fetchStatuses()
-    // }, [])
-
+    
 
     useEffect(() => {
         const fetchData = async () => {

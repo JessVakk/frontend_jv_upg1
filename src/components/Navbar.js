@@ -11,9 +11,8 @@ const Navbar = () => {
               
                 <li><Link to='/add' className=" text-white me-3" >Skriv Ärende</Link></li>
                 <li><Link to="/issue" className=" text-light me-3 " > Ärende </Link></li>
-                <li><Link to="/issues" className=" text-light me-3 " > ÄrendeLista </Link></li>
-                <li><Link to="/status" className=" text-light me-3 " > Status </Link></li>
-                <li><Link to="/comment" className=" text-light me-3 " > Kommentarer </Link></li>
+                <li><Link to="/issue/:id" className=" text-light me-3 " > ÄrendeLista </Link></li>
+                <li><Link to="/comment/:id" className=" text-light me-3 " > Kommentarer </Link></li>
             </ul>
            </div>
       </nav>
